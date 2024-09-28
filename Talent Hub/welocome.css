@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('/static/bag.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', Tahoma, 'Geneva', Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(95, 3, 3, 0.737);
+    text-align: center;
+    margin-top: 10%; /* Adjust as needed */
+}
+
+.box {
+    padding: 1rem;
+    border: 3px solid black;
+    width: 80%; /* Adjusted width for smaller screens */
+    margin: 10% auto; /* Adjusted margin for smaller screens */
+    background-color: azure;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.next-button {
+    display: block;
+    margin: 2% auto;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #357ae8;
+}
+

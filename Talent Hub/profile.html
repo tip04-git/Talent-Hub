@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="profile.css">
+    <style>
+        /* Adjust font size for button text */
+        .buttons button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .buttons button img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .buttons button span {
+            font-size: 0.8em; /* Adjust font size as needed */
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div>
+        <div class="logo">
+            <i class='bx bx-menu menu_icon'></i>
+            <span class="logo_name">TalentHub</span>
+        </div>
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class='bx bx-menu menu_icon'></i>
+                <span class="logo_name">TalentHub</span>
+            </div>
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="home.html" class="nav_link">
+                            <i class='bx bx-home-alt-2 icon'></i>
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="profile.html" class="nav_link">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="link">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="settings.html" class="nav_link">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="link">Settings</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="notifications.html" class="nav_link">
+                            <i class='bx bxs-bell icon'></i>
+                            <span class="link">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="notifications.html" class="nav_link">
+                            <i class='bx bx-search icon'></i>
+                            <span class="link">Search</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom_content">
+                    <li class="list">
+                        <a href="logout.html" class="nav_link">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="link">Logout</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="contact.html" class="nav_link">
+                            <i class='bx bxs-contact icon' ></i>
+                            <span class="link">Contact</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    
+        <script>
+            const navBar = document.querySelector("nav"),
+                menuBtns = document.querySelectorAll(".menu_icon"),
+                overlay = document.querySelector(".overlay");
+            menuBtns.forEach((menuBtn) => {
+                menuBtn.addEventListener("click", () => {
+                    navBar.classList.toggle("open");
+                });
+            });
+            overlay.addEventListener("click",() => {
+                navBar.classList.remove("open");
+    
+            });
+            </script>
+    </div>
+    <div>
+        <header>
+            <h1>My Profile</h1>
+            <button id="home-btn" class="with-logo"><img src="humi1.png" alt="Home"><span>Home</span></button>
+        </header>
+        <div class="profile-section">
+            <div class="profile-info">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <div class="user-details">
+                    <h2>Username</h2>
+                    <p>"users bio will be displayed here"</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button><img src="edit.svg" alt="edit"><span>Edit Profile</span></button>
+                <button ><img src="settings.png" alt="settings"><span>Settings</span></button>
+                <button id="add-post-btn"><img src="addu.png" alt="add"><span>Add Post</span></button>
+            </div>
+            <div class="stats">
+                <p>Posts: <span id="posts">0</span></p>
+                <p>Followers: <span id="followers">0</span></p>
+                <p>Following: <span id="following">0</span></p>
+            </div>
+        </div>
+        <!-- Existing HTML code... -->
+        <div class="posts-section">
+            <div class="post-container">
+                <div class="post-navigation">
+                    <!-- Scrollbar will be added here -->
+                </div>
+                <div class="post-column">
+                    <div class="post">
+                        <!-- Placeholder for posts -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="big-box">
+        
+        </div>
+    </div>
+    
+    <!-- Rest of the HTML code... -->
+</body>
+</html>

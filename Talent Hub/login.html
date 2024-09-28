@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentHub login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+        <h1 class="logo">MsritTalentHub</h1>
+        <form action="login" method="post">
+          {% csrf_token %}
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Log In</button>
+        </form>
+        <div class="signup-box">
+          <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+      </div>
+        <div class="separator">
+            <span>OR</span>
+        </div>
+        <a href="#">Forgot password?</a>
+    </div>
+  </div>
+</body>
+</html>

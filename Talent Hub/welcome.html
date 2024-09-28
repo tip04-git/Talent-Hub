@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to MSRIT Talent Hub</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <h1>Welcome to TalentHub!</h1>
+  <div class="box">
+    <p>Welcome to Talent Hub, your premier online platform for connecting talent with opportunity. Our dynamic hub offers profile creation, talent discovery, and skill development resources to empower individuals in any field. Explore diverse opportunities through our opportunities board and engage with a vibrant community of like-minded individuals. Whether you're an artist, entrepreneur, or professional, Talent Hub provides the tools and support you need to thrive. Join us today to unleash your potential, pursue your passions, and achieve your dreams. Talent Hub: Where talent meets opportunity, and possibilities abound. Start your journey with us and discover a world of endless possibilities.</p>
+    <form action="{% url 'login' %}">
+    <button class="next-button" onclick="/templates/login.html">Next</button>
+  </form>
+  </div>
+</body>
+</html>

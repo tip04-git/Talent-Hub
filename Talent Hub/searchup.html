@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>MsritTalentHub</title>
+    <link rel="stylesheet" href="searchup.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <i class='bx bx-menu menu_icon'></i>
+        <span class="logo_name">TalentHub</span>
+    </div>
+    <div class="search">
+      <h1>search</h1>
+      <form action="" class="search_bar">
+        <input type="text" placeholder="search" name="q">
+        <button type="submit"><i class='bx bx-search icon'></i></button>
+      </form>
+    </div>
+    <div class="sidebar">
+        <div class="logo">
+            <i class='bx bx-menu menu_icon'></i>
+            <span class="logo_name">TalentHub</span>
+        </div>
+        <div class="sidebar-content">
+            <ul class="lists">
+                <li class="list">
+                    <a href="home.html" class="nav_link">
+                        <i class='bx bx-home-alt-2 icon'></i>
+                        <span class="link">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="profile.html" class="nav_link">
+                        <i class='bx bx-user-circle icon'></i>
+                        <span class="link">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="settings.html" class="nav_link">
+                        <i class='bx bx-cog icon'></i>
+                        <span class="link">Settings</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="notif.html" class="nav_link">
+                        <i class='bx bxs-bell icon'></i>
+                        <span class="link">Notifications</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="search.html" class="nav_link">
+                        <i class='bx bx-search icon'></i>
+                        <span class="link">Search</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="bottom_content">
+                <li class="list">
+                    <a href="logout.html" class="nav_link">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="link">Logout</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="about.html" class="nav_link">
+                        <i class='bx bxs-contact icon' ></i>
+                        <span class="link">Contact</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="overlay"></section>
+    <script>
+        const navBar = document.querySelector("nav"),
+            menuBtns = document.querySelectorAll(".menu_icon"),
+            overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+            menuBtn.addEventListener("click", () => {
+                navBar.classList.toggle("open");
+            });
+        });
+        overlay.addEventListener("click",() => {
+            navBar.classList.remove("open");
+
+        });
+    </script> 
+    <!--<header>
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </nav>
+    </header> -->
+    
+        <h1>Choose Your Intrest </h1> <!-- New heading -->
+        <div class="talent">
+            <a href="#" class="talents">Art</a>
+            <a href="#" class="talents">Music</a>
+            <a href="#" class="talents">Dance</a>
+            <a href="#" class="talents">Photography</a>
+            <a href="#"  class="talents">Crafts and DIY</a>
+            <a href="#"  class="talents">Culinary Arts</a>
+            <a href="#"  class="talents">Poetry</a>
+        </div>
+</body>
+</html>

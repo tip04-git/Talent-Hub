@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notif.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class='bx bx-menu menu_icon'></i>
+            <span class="logo_name">TalentHub</span>
+        </div>
+        
+        <div class="sidebar">
+            <div class="logo">
+                <i class='bx bx-menu menu_icon'></i>
+                <span class="logo_name">TalentHub</span>
+            </div>
+            <div class="sidebar-content">
+                <ul class="lists">
+                    <li class="list">
+                        <a href="home.html" class="nav_link">
+                            <i class='bx bx-home-alt-2 icon'></i>
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="profile.html" class="nav_link">
+                            <i class='bx bx-user-circle icon'></i>
+                            <span class="link">Profile</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="settings.html" class="nav_link">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="link">Settings</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="notif.html" class="nav_link">
+                            <i class='bx bxs-bell icon'></i>
+                            <span class="link">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="search.html" class="nav_link">
+                            <i class='bx bx-search icon'></i>
+                            <span class="link">Search</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom_content">
+                    <li class="list">
+                        <a href="logout.html" class="nav_link">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="link">Logout</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="about.html" class="nav_link">
+                            <i class='bx bxs-contact icon' ></i>
+                            <span class="link">Contact</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h2>
+        Notifications
+    </h2>
+
+    <section class="overlay"></section>
+
+        <script>
+            const navBar = document.querySelector("nav"),
+                menuBtns = document.querySelectorAll(".menu_icon"),
+                overlay = document.querySelector(".overlay");
+            menuBtns.forEach((menuBtn) => {
+                menuBtn.addEventListener("click", () => {
+                    navBar.classList.toggle("open");
+                });
+            });
+            overlay.addEventListener("click",() => {
+                navBar.classList.remove("open");
+
+            });
+        </script>
+   
+</body>
+</html>

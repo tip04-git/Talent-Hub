@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+.with-logo {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.with-logo img {
+    width: 20px; /* Adjust image size as needed */
+    margin-right: 5px; /* Add spacing between image and text */
+}
+#home-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+
+#home-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details {
+    text-align: left;
+}
+
+.user-details h2 {
+    margin: 0;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.buttons img{
+    width: 30px;
+    
+}
+.buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.stats {
+    margin-top: 20px;
+}
+
+.posts-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.post-column {
+    flex: 1;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-column h3 {
+    margin-top: 0;
+}
+
+.post-column:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+.post-container {
+    height: calc(100% - 40px); /* Adjust height as needed */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    padding-right: 15px; /* Add padding to accommodate scrollbar width */
+}
+/* Existing CSS styles... */
+
+.big-box {
+    background-color: transparent;
+    border: 2px solid black; /* Border color */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+    overflow-y: auto;
+    color: black; /* Text color */
+    /* Add vertical scrollbar if needed */
+}
+
+/* Custom scrollbar */
+.big-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.big-box::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Change scrollbar thumb color */
+    border-radius: 5px;
+}
+
+.big-box::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3; /* Change scrollbar thumb color on hover */
+}
+
+/* Rest of the CSS styles... */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    background: #e3f2fd;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+nav.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+}
+.logo .menu_icon{
+    color: #333;
+    font-size: 24px;
+    margin-right:14px;
+    cursor: pointer;
+}
+.logo .logo_name{
+    color:#333;
+    font-size: 22px;
+    font-weight: 500;
+}
+nav .sidebar{
+    position: fixed;
+    top: 0;
+    left:-100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+nav.open .sidebar {
+    left: 0;
+}
+.sidebar .sidebar_content{
+    padding: 30px 16px;
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.sidebar_content .list{
+    list-style:none;
+}
+.bottom_content{
+    list-style: none;
+}
+.list .nav_link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 14px 12px;
+    border-radius: 8px;
+    
+}
+.nav_link:hover {
+     background-color: #4070f4;
+}
+
+.nav_link .icon{
+    margin-right: 14px;
+    font-size: 20px;
+    color: #707070;
+}
+.nav_link .link{
+    font-size: 16px;
+    color: #707070;
+   font-weight: 400; 
+}
+.nav_link:hover .icon,
+.nav_link:hover .link{
+     color: #fff;
+}
+.overlay{
+    height: 1000vh;
+    width: 200%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    opacity: 0;
+    left:-100%;
+    position: fixed;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+nav.open ~ .overlay {
+    left: 260px;
+    opacity: 1;
+    pointer-events: auto;
+}

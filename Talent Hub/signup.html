@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentHub Signup</title>
+    <link rel="stylesheet" href="/static/signup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="signup-box">
+        <h1 class="logo">MsritTalentHub</h1>
+        <p class="subtitle">Sign up to see photos and videos from your friends.</p>
+        <form action="/signup" method="post">
+          {% csrf_token %}
+            <input type="email" name="email" placeholder="Email" Required>
+            <input type="password" name="emailpassword" placeholder="email  Password" Required>
+            <input type="text" name="username" placeholder="Username" Required>
+            <input type="password" name="password" placeholder="Password" Required>
+            <input type="text" name="domain" placeholder="domain" Required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="terms">By signing up, you agree to our <a href="#">Terms</a>
+        <p class="terms">&</p>  
+        <p class="terms"><a href="#">Conditions</a>
+
+
+
+    </div>
+  </div>
+</body>
+</html>
